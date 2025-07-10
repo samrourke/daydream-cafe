@@ -1,11 +1,9 @@
 /** @type {import('next').NextConfig} */
-const { withNetlify } = require("@netlify/next");
-
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: [], // add domains like 'images.unsplash.com' if needed
+    domains: [], // add external image domains if needed
   },
 };
 
-module.exports = withNetlify(nextConfig);
+module.exports = nextConfig;
