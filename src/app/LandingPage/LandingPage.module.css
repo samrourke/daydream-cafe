@@ -1,0 +1,94 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+
+
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('/batch3.webp') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+  
+}
+
+
+
+
+
+.overlay {
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.3); /* dark overlay for contrast */
+padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  backdrop-filter: blur(3px);
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.overlay h1 {
+  font-size: clamp(4rem, 7vw, 5rem);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color:rgb(255, 250, 241);
+}
+
+
+.logo{
+  width:100%;
+ margin-bottom: 2rem;
+}
+
+.logo > img{
+  width:50%;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(41%) saturate(2005%) hue-rotate(293deg) brightness(114%) contrast(101%);
+ 
+}
+.title{
+font-family: var(--fraunces);
+}
+.italic{
+  font-style: italic;
+}
+
+.subtitle{
+  text-transform: uppercase;
+    color:rgb(255, 250, 241);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+
+}
+.overlay p {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-weight: 400;
+    color:rgb(255, 250, 241);
+
+}
+
+
+.text{
+    
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    position: relative;
+    color: white;
+    max-width: 500px;
+   
+}
+
+
+

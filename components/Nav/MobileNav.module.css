@@ -1,0 +1,135 @@
+.hamburger {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.toggleButton{
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+  border: none;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 999999;
+  background-color: rgb(23, 23, 23);
+  padding:1rem;
+  border-radius:50%;
+  transition-delay: 0.85s;
+
+}
+
+.open{
+  background-color: transparent;
+  transition: 0.1s;
+
+}
+
+.toggleButton span {
+  display: block;
+  height: 3px;
+  width:24px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.toggleButton.open span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 5px);
+}
+
+.toggleButton.open span:nth-child(2) {
+transform: translate(-10px);
+  
+  opacity: 0;
+}
+
+.toggleButton.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+    
+}
+
+.toggleButton.open span:nth-child(1),
+.toggleButton.open span:nth-child(2),
+.toggleButton.open span:nth-child(3){
+background:var(--bg)
+}
+
+/* .bar {
+  width: 25px;
+  height: 3px;
+  background: black;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+} */
+
+.menuOverlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100svh;
+  width: 100vw;
+  
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out;
+  gap:2rem;
+}
+
+.logo{
+  width:200px;
+  max-width: 28vw;
+  height:auto;
+  filter:invert(1);
+  position: absolute;
+  bottom:30px;
+  left:50%;
+   transform: translate(-50%, 0);
+   opacity:0;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  text-align: center;
+}
+
+.navList li {
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  font-family: var(--work_sans);
+  transition: opacity 0.3s ease;
+  opacity:0;
+}
+
+.navList li:hover {
+  opacity: 0.7;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+
+@media(max-width:768px){
+.toggleButton{
+  display: flex;
+}
+}

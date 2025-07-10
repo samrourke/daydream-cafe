@@ -1,27 +1,36 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+ 
+  --background: radial-gradient(circle,rgba(255, 250, 241, 1) 0%, rgba(250, 242, 218, 1) 48%, rgba(255, 250, 241, 1) 100%);
+  --foreground: #000000;
+   --bg: #ffefc7;
+   --contrast:#0c036d;
+   --coral:#FF6F61;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+   
   }
-}
+} */
 
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  font-family: var(--fraunces), Arial, Helvetica, sans-serif;
+
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(circle, rgba(255, 250, 241, 1) 0%, rgba(250, 242, 218, 1) 48%, rgba(255, 250, 241, 1) 100%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Sora', sans-serif;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.6;
+  height:100vh;
 }
 
 * {
@@ -30,13 +39,90 @@ body {
   margin: 0;
 }
 
+.layoutWrapper {
+  display: grid;
+  grid-template-columns: 1fr 4fr; /* Or adjust */
+  height: 100vh;
+}
+
+.mainContent {
+  overflow-y: auto;
+  height: 100vh;
+}
+
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  color: var(--heading);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: var(--text);
+  font-weight: 300;
+}
+
+
+section{
+  min-height: 100dvh;
+  
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  font-family: var(--work_sans);
+  overflow: scroll;
+}
+
+.sectionTitle{
+  font-size: clamp(3rem, 4vw, 6rem);
+  text-align: left;
+  letter-spacing: 1px;
+  color:var(--coral);
+  text-align: center;
+
+}
+
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+} */
+
+
+@media (max-width:768px){
+  .mainContent{
+    width:100vw
+  }
+
+  .layoutWrapper {
+  display: flex;
+  height: 100vh;
+  width:100vw;
+}
+
 }
