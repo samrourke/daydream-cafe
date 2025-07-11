@@ -46,19 +46,20 @@
 }
 
 
-.logo{
 
-  width:100%;
-  min-width: 250px;
-   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-margin-right: -1rem;
-  
+.logo {
+  margin-right: -1rem;
+  position: relative; /* Required for Next Image to fill this container */
+  width: 80%;
+  min-width: 210px;
+  aspect-ratio: 3 / 1; /* Adjust depending on image shape */
+  margin-bottom: 2rem;
+  margin-top: 0;
 }
 
+
 .logo > img{
-  width:90%;
+  width:100%;
  filter: brightness(0) saturate(100%) invert(100%) sepia(41%) saturate(2005%) hue-rotate(293deg) brightness(114%) contrast(101%); 
 }
 

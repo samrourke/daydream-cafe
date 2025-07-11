@@ -2,6 +2,7 @@
 import styles from "./About.module.css";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import Image from "next/image";
 
 export default function About() {
   const sectionRef = useRef([]);
@@ -28,11 +29,17 @@ export default function About() {
           className={styles.textColumn}
           ref={(el) => (sectionRef.current[0] = el)}
         >
-          <img
-            src="/inkblotCropped.png"
-            alt="Daydream Cafe Logo"
-            className={styles.logo}
-          />
+          <div className={styles.logo}>
+            {" "}
+            <Image
+              src="/compressed/inkblotCropped.webp"
+              alt="Daydream Cafe Logo"
+              fill
+              className={styles.logoImg}
+              style={{ objectFit: "contain" }}
+            />
+          </div>
+
           <p>
             <span className={styles.highlight}> Daydream Cafe</span> was born in
             2025 from our shared love of speciality coffee and Italian food.
@@ -42,19 +49,19 @@ export default function About() {
             atmosphere that encourages you to lose track of time.
           </p>
           <div className={styles.imageStack}>
-            <div class={`${styles.imageStackItem} ${styles.top}`}>
+            <div className={`${styles.imageStackItem} ${styles.top}`}>
               <img
                 ref={(el) => (sectionRef.current[1] = el)}
-                src="/founders.png"
+                src="/compressed/founders.webp"
                 alt="The founders of Daydream"
                 className={styles.mobileImg}
               />
             </div>
-            <div class={`${styles.imageStackItem} ${styles.bottom}`}>
+            <div className={`${styles.imageStackItem} ${styles.bottom}`}>
               {" "}
               <img
                 ref={(el) => (sectionRef.current[1] = el)}
-                src="/exterior.png"
+                src="/compressed/exterior.webp"
                 alt="The exterior of Daydream"
                 className={styles.mobileImg}
               />

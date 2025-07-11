@@ -61,11 +61,12 @@ export default function Sidebar() {
       >
         <div className={styles.title} ref={titleRef}>
           <div className={styles.logo}>
-            <img
-              src="./logoCropped.png"
+            <Image
+              src="/compressed/logoCropped.webp"
+              fill
               alt="Daydream logo"
               onClick={() => router.push("/")}
-            ></img>
+            />
           </div>
         </div>
         <nav className={styles.nav}>

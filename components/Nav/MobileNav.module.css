@@ -79,7 +79,6 @@ background:var(--bg)
   right: 0;
   height: 100svh;
   width: 100vw;
-  
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -90,7 +89,7 @@ background:var(--bg)
   gap:2rem;
 }
 
-.logo{
+/* .logo{
   width:200px;
   max-width: 28vw;
   height:auto;
@@ -98,16 +97,20 @@ background:var(--bg)
   position: absolute;
   bottom:30px;
   left:50%;
-   transform: translate(-50%, 0);
-   opacity:0;
-}
+  transform: translate(-50%, 0);
+  opacity:0;
+} */
 
 .navList {
   list-style: none;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2.5rem;
   text-align: center;
+  justify-content: space-evenly;
+
+  height:70dvh;
 }
 
 .navList li {
@@ -127,6 +130,19 @@ background:var(--bg)
   text-decoration: underline;
 }
 
+.logo {
+  position: relative; /* Required for Next Image to fill this container */
+  width: 35%;
+  min-width: 200px;
+  max-width: 300px;
+  aspect-ratio: 3 / 1; /* Adjust depending on image shape */
+}
+
+.logoImg {
+  filter:invert(1);
+  object-fit: contain; /* Ensures it doesn't stretch weirdly */
+  opacity: 0;
+}
 
 @media(max-width:768px){
 .toggleButton{

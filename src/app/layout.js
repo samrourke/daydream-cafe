@@ -1,10 +1,9 @@
-"use client";
 import "./globals.css";
-import { useEffect, useState } from "react";
 
 import { Fraunces, Roboto, Work_Sans } from "next/font/google";
 import Sidebar from "../../components/Nav/Sidebar";
 import MobileNav from "../../components/Nav/MobileNav";
+import Head from "./head";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -27,6 +26,7 @@ const work_sans = Work_Sans({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${fraunces.variable} ${work_sans.variable}`}>
+      <Head></Head>
       <body className="layout">
         <div className="layoutWrapper">
           <Sidebar />

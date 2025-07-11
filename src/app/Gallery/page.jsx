@@ -8,22 +8,22 @@ export default function Gallery() {
   const imageRef = useRef([]);
   const containerRef = useRef();
   const images = [
-    "/bruschetta.webp",
-    "/pourover.jpg",
-    "/salad.jpg",
-    "/bomboloni.jpg",
-    "fritatta.jpg",
-    "/scacce.png",
-    "/exterior.png",
-    "/chemex.webp",
-    "/pizzette.webp",
-    "/v60.jpeg",
-    "/salad2.webp",
-    "/pourOver.avif",
-    "/pizzette2.webp",
-    "/caprese.jpg",
-    "/interior.png",
-    "fritatta2.jpg",
+    "/compressed/bruschetta.webp",
+    "/compressed/pourover.webp",
+    "/compressed/salad.webp",
+    "/compressed/bomboloni.webp",
+    "/compressed/fritatta.webp",
+    "/compressed/scacce.webp",
+    "/compressed/exterior.webp",
+    "/compressed/chemex.webp",
+    "/compressed/pizzette.webp",
+    "/compressed/v60.webp",
+    "/compressed/salad2.webp",
+    "/compressed/pourOver.webp",
+    "/compressed/pizzette2.webp",
+    "/compressed/caprese.webp",
+    "/compressed/interior.webp",
+    "/compressed/fritatta2.webp",
   ];
 
   useEffect(() => {

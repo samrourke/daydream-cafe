@@ -76,13 +76,18 @@ export default function MobileNav() {
         ref={menuRef}
         style={{ background: currentColor }}
       >
-        <Image
-          src="./logoCropped.png"
-          alt="Daydream logo"
-          className={styles.logo}
-          onClick={() => handleNavigate("/", "#FF6F61")}
-          ref={(el) => (menuItemRef.current[4] = el)}
-        ></Image>
+        <div className={styles.logo}>
+          {" "}
+          <Image
+            src="/compressed/logoCropped.webp"
+            alt="Daydream logo"
+            fill
+            className={styles.logoImg}
+            onClick={() => handleNavigate("/", "#FF6F61")}
+            ref={(el) => (menuItemRef.current[4] = el)}
+          />
+        </div>
+
         <ul className={styles.navList}>
           {navItems.map((item, index) => (
             <li

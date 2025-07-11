@@ -23,10 +23,21 @@
   opacity:0;
 }
 
-.logo {
-  max-width: 450px;
-  margin-bottom: 2rem;
 
+
+.logo {
+  position: relative; /* Required for Next Image to fill this container */
+  width: 80%;
+    max-width: 450px;
+  margin-bottom: 2rem;
+  aspect-ratio: 3 / 1; /* Adjust depending on image shape */
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.logoImg {
+  width:100%;
+  object-fit: contain; /* Ensures it doesn't stretch weirdly */
 }
 
 .highlight {
