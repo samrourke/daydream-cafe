@@ -84,13 +84,13 @@ export default function About() {
         <div className={styles.imageGrid}>
           <img
             ref={(el) => (sectionRef.current[2] = el)}
-            src="/founders.png"
+            src="/compressed/founders.webp"
             alt="Rich & Tom, founders of Daydream"
             className={styles.img}
           />
           <img
             ref={(el) => (sectionRef.current[3] = el)}
-            src="/exterior.png"
+            src="/compressed/exterior.webp"
             alt="Daydream Café storefront"
             className={styles.img}
           />
