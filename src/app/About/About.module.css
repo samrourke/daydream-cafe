@@ -152,3 +152,56 @@
     max-width: 260px;
   }
 }
+
+
+@media (max-width: 760px) {
+  .aboutGrid {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 0;
+
+  }
+
+  .imageColumn {
+    order: -1; /* Put image on top on mobile */
+ 
+  }
+
+
+
+  .mobileImg{
+   width:180px;
+   height:auto;
+   min-width: 0;
+
+
+  }
+
+ .imageStack {
+    display: grid;
+    grid-template-columns: repeat(22, 1fr);
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+
+
+  .bottom {
+    grid-column: 9 / -1;
+    grid-row: 1;
+  }
+
+  .top {
+      grid-column: 3/ span 16;
+      grid-row: 1; 
+      padding-top: 20%;
+      z-index: 1; 
+    }
+
+  
+
+
+  .logo {
+    max-width: 260px;
+  }
+}

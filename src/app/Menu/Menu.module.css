@@ -50,3 +50,10 @@ font-family: var(--work_sans);
   font-size: 1rem;
   line-height: 1.4;
 }
+
+
+@media(max-width:760px){
+  .menuSection{
+    padding: 1rem 2rem;
+  }
+}

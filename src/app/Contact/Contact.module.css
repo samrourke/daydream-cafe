@@ -1,6 +1,10 @@
 .contactSection{
     margin-top: 2rem;
+
+    
 }
+
+
 
  .contact{
     display: flex;
@@ -48,12 +52,7 @@
 }
 
 
-.icon{
-   height:50px;
-   width:auto;
-    margin-bottom: 2rem;
-  
-}
+
 
 .iconRow {
   display: flex;
@@ -69,6 +68,10 @@
 }
 
 
+.iconRow p{
+    margin: 0;
+}
+
 
 
    .mapContainer{
@@ -82,12 +85,30 @@
     @media(max-width:760px){
       
         .contact{
-            margin-top: 3rem;
+            margin-top: 2rem;
         }
         .contactContainer{
            padding: 0;
             width:100vw;
+            align-items: center;
         }
+
+        .contactContainer > div{
+    
+            padding: 0rem;  
+            align-items: center;
+          }
+
+         
+
+         .iconRow img{
+   height:40px;
+    width:auto;
+    margin-bottom: 0;
+  
+}
+
+
 
         .mapContainer{
             width:80%;

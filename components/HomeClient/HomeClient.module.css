@@ -3,15 +3,13 @@
     flex-direction: column;
     gap:2rem;
     opacity: 0;
+    height:100%;
 }
-
-
-
 
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height:100%;
   background: url('/compressed/interior.webp') center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -20,10 +18,6 @@
   color: white;
 
 }
-
-
-
-
 
 .overlay {
   max-width: 800px;
@@ -97,8 +91,21 @@ font-family: var(--fraunces);
 
 
 @media(max-width:1100px){
+  .hero{
+    min-height: 0;
+  }
+ 
   .overlay{
     max-width:80%;
+  }
+}
+
+@media(max-width:760px){
+  .overlay{
+    max-width:95%;
+  }
+   .hero{
+    padding:0;
   }
 }
 

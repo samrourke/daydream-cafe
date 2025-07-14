@@ -327,8 +327,8 @@ export default function Map() {
           <Marker
             position={markerPosition}
             icon={{
-              url: "/logoCropped.png",
-              scaledSize: new window.google.maps.Size(200, 80),
+              url: "/compressed/logoCropped.webp",
+              scaledSize: new window.google.maps.Size(100, 40),
             }}
             animation={window.google.maps.Animation.DROP}
           />
