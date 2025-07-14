@@ -1,7 +1,5 @@
 .contactSection{
     margin-top: 2rem;
-
-    
 }
 
 
@@ -83,9 +81,14 @@
 
 
     @media(max-width:760px){
+        .contactSection{
+            width:100dvw;
+            padding-top: 1rem;
+            padding-bottom: 6rem;;
+        }
       
         .contact{
-            margin-top: 2rem;
+            margin-top: 0;
         }
         .contactContainer{
            padding: 0;

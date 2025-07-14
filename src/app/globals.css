@@ -50,7 +50,6 @@ body {
 
 .mainContent {
   overflow-y: auto;
-  
 
 }
 
@@ -120,12 +119,12 @@ section{
 
 @media (max-width:768px){
   .mainContent{
-    width:100vw
+    width:100vw;
   }
 
   .layoutWrapper {
   display: flex;
-  height: 100vh;
+
   width:100vw;
 }
 
