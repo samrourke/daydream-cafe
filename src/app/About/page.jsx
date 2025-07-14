@@ -50,20 +50,26 @@ export default function About() {
           </p>
           <div className={styles.imageStack}>
             <div className={`${styles.imageStackItem} ${styles.top}`}>
-              <img
+              <Image
                 ref={(el) => (sectionRef.current[1] = el)}
                 src="/compressed/founders.webp"
                 alt="The founders of Daydream"
                 className={styles.mobileImg}
+                width={800}
+                height={582}
+                style={{ aspectRatio: 800 / 582 }}
               />
             </div>
             <div className={`${styles.imageStackItem} ${styles.bottom}`}>
               {" "}
-              <img
+              <Image
                 ref={(el) => (sectionRef.current[1] = el)}
                 src="/compressed/exterior.webp"
                 alt="The exterior of Daydream"
                 className={styles.mobileImg}
+                width={800}
+                height={1200}
+                style={{ aspectRatio: 800 / 1200 }}
               />
             </div>
           </div>
@@ -82,17 +88,23 @@ export default function About() {
         </div>
 
         <div className={styles.imageGrid}>
-          <img
+          <Image
             ref={(el) => (sectionRef.current[2] = el)}
             src="/compressed/founders.webp"
             alt="Rich & Tom, founders of Daydream"
             className={styles.img}
+            width={800}
+            height={582}
+            style={{ aspectRatio: 800 / 582 }}
           />
-          <img
+          <Image
             ref={(el) => (sectionRef.current[3] = el)}
             src="/compressed/exterior.webp"
             alt="Daydream Café storefront"
             className={styles.img}
+            width={800}
+            height={1200}
+            style={{ aspectRatio: 800 / 1200 }}
           />
         </div>
       </div>

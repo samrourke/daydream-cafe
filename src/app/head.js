@@ -8,6 +8,7 @@ export default function Head() {
         italian cuisine"
       />
       <link rel="icon" href="/compressed/chemexIcon.png" sizes="any" />
+      <link rel="preload" href="/compressed/interior.webp" as="image" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta charSet="UTF-8" />
     </>

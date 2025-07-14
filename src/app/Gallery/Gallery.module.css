@@ -10,28 +10,19 @@
   column-gap: 0.5rem;
 }
 
-/* .image {
-  width: 100%;
-  margin-bottom: 0.5rem;
-  display: block;
-  break-inside: avoid;
-  transition: transform 0.3s ease;
-  opacity: 0;
 
-  
-} */
 
 .image {
 
   margin-bottom: 0.5rem;
   width: 100%;
+  height: auto;
   display: block;
   break-inside: avoid;
   transition: opacity 0.4s ease, transform 0.4s ease;
   border-radius: 0.5rem;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.08);
   opacity: 0;
-
 }
 
 .image:hover {
@@ -52,10 +43,8 @@
 
 @media (max-width: 760px) {
   
-
   .image{
     max-width: 450px;
     min-width: none;
-   
   }
 }
